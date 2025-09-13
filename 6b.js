@@ -9,10 +9,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/mydb')
   .then(() => console.log('✅ MongoDB Connected'))
   .catch(err => console.log(err));
 
-// 2️⃣ Create Schema & Model
+
 const UserSchema = new mongoose.Schema({
   name: String,
-  email: String
+  email: String,
 });
 const User = mongoose.model('User', UserSchema);
 
